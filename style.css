@@ -1,0 +1,244 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+html, body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.medium-font{
+    font-weight: 400;
+    font-size: 1.3rem; /* Adjust title size */
+    color: #fff; /* White text */
+}
+
+.small-font{
+    font-weight: 200;
+    font-size: 0.8rem; /* Adjust title size */
+    color: #9E9E9E;
+}
+
+
+/* Here is my navigation bar  */
+.top-nav {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Assuming a black background */
+    color: #fff; /* White text */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    height: 1.8rem; /* Adjust the logo size */
+    margin-right: 1.2rem; /* Space between logo and title */
+}
+
+.logo-container h1 {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links {
+    /* Styles for the navigation links */
+}
+.nav-links .restart-button {
+    text-decoration: none;
+    color: #fff; /* White text for the link */
+    padding: 0.4rem 1rem; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    font-size: 1rem; /* Adjust title size */
+
+}
+
+.nav-links .restart-button:hover {
+    background-color: #d5015d; /* Darker red on hover */
+}
+
+.cam-area {
+    display: block; /* Use 'block' for standard div behavior */
+    margin-left: auto; /* Automatically calculate left margin */
+    margin-right: auto; /* Automatically calculate right margin */
+    width: 100%; /* Set a width; adjust this as needed */
+    /* Optional: if you want to center the content inside the div */
+    text-align: center;
+}
+
+.citation{
+    text-align: center;
+}
+
+.artwork-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Horizontally center children */
+    padding: 5vw;
+    padding-top: 15vh;
+    padding-bottom: 25vh;
+    color: #fff; /* White text color */
+}
+
+.artwork-image {
+    margin-left: 15vw; /* Space between image and text */
+    width: 15vw; /* Adjust the logo size */
+}
+
+.artwork-description {
+    max-width: 50vw; /* Maximum text width */
+}
+
+
+.artwork-artist {
+    font-size: 1.5rem; /* Text font size */
+    font-weight: 600;
+    line-height: 200%;
+}
+
+.artwork-title {
+    font-size: 1.5rem; /* Text font size */
+    font-weight: 300;
+    padding-top: 0.7rem;
+    line-height: 200%;
+}
+
+.artwork-text {
+    font-size: 1rem; /* Text font size */
+    font-weight: 200;
+    padding-top: 0.4rem;
+    line-height: 200%;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 1.2rem;
+    bottom: 0;
+    background-color: #0000009f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-align: left; /* Aligns the text to the left */
+}
+
+.footer img {
+    height: 1.2rem; /* Adjust as needed */
+    margin-right: 0.2rem; /* Space between logo and text */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8rem; /* Adjust as needed */
+    margin-top: 1rem;
+    color: #9E9E9E;
+}
+
+.footer .link {
+    text-decoration: none;
+    color: #9E9E9E; /* White text for the link */
+    padding: 0.2rem 0.6rem; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    font-size: 0.8rem; /* Adjust title size */
+
+}
+
+.footer .link:hover {
+    color: white; /* White text for the link */
+    background-color: #d5015d70; /* Darker red on hover */
+}
+
+.choose-style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white; /* White text for the link */
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.artstyle {
+    width: calc(33.33% - 16px);
+    margin-bottom: 16px;
+    position: relative; /* Needed to position the ::after pseudo-element */
+}
+
+.artstyle-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.artstyle-description {
+    padding-bottom: 16px;
+    text-align: center;
+    line-height: 200%;
+}
+
+.artstyle::after {
+    content: ''; /* Required for the pseudo-element to work */
+    position: absolute; /* Position relative to .artstyle */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black with 30% opacity */
+    transition: opacity 0.3s ease; /* Transition for smooth effect */
+    pointer-events: none; /* This makes sure clicks go through the overlay */
+}
+
+.artstyle:hover::after {
+    opacity: 0; /* Makes the overlay fully transparent on hover */
+}
+
+.artstyle-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.artstyle-link:hover {
+    background-color: transparent; /* Removing the background color on hover if not needed */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .artwork {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .artwork {
+        width: 100%;
+    }
+}
+
