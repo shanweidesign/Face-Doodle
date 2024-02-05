@@ -1,0 +1,123 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+html, body {
+    height: 100%; /* This ensures that the parent container takes up the full viewport height */
+    margin: 0; /* Resets default margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+#intro{
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    justify-content: center; /* Vertically centers children in the container if there's extra space */
+    align-items: center; /* Horizontally centers children in the container */
+    text-align: center; /* Centers text within children */
+    max-width: 720px;
+    padding: 2rem;
+}
+.logo{
+    width: 240px;
+    margin: 2rem;
+}
+
+.header-font{
+    font-weight: 500;
+    font-size: 1.3rem; /* Adjust title size */
+    color: #fff; /* White text */
+}
+
+.body-font{
+    font-weight: 200;
+    font-size: 1.0rem; /* Adjust title size */
+    color: #fff; /* White text */
+}
+
+.cta-links {
+    margin: 4rem;
+    font-weight: 300;
+}
+.cta-links .cta-button {
+    text-decoration: none;
+    color: #fff; /* White text for the link */
+    padding: 0.8rem 2.0rem; /* Padding inside the button */
+    border-radius: 40px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    font-size: 1.3rem; /* Adjust title size */
+    background-color: #ffffff15; /* Darker red on hover */
+
+}
+
+.cta-links .cta-button:hover {
+    background-color: #d5015d; /* Darker red on hover */
+}
+
+
+.footer {
+    position: fixed;
+    width: 100%;
+    left: 1.2rem;
+    bottom: 0;
+    background-color: #0000009f;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    text-align: left; /* Aligns the text to the left */
+}
+
+.footer img {
+    height: 1.2rem; /* Adjust as needed */
+    margin-right: 0.2rem; /* Space between logo and text */
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.8rem; /* Adjust as needed */
+    margin-top: 1rem;
+    color: #9E9E9E;
+}
+
+.footer .link {
+    text-decoration: none;
+    color: #9E9E9E; /* White text for the link */
+    padding: 0.2rem 0.6rem; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+    font-size: 0.8rem; /* Adjust title size */
+
+}
+
+.footer .link:hover {
+    color: white; /* White text for the link */
+    background-color: #d5015d70; /* Darker red on hover */
+}
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .artwork {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .artwork {
+        width: 100%;
+    }
+}
+
